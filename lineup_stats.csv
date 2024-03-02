@@ -1,0 +1,157 @@
+Position,Player,Age,Market Value,Club,Gameday,H/A,Status
+Goalkeeper,Marvin Keller,21,€1.00m,FC Winterthur,18. Matchday,Home,Starting
+Centre-Back,Remo Arnold,26,€200k,FC Winterthur,18. Matchday,Home,Starting
+Centre-Back,Loïc Lüthi,20,€100k,FC Winterthur,18. Matchday,Home,Starting
+Left-Back,Tobias Schättin,26,€300k,FC Winterthur,18. Matchday,Home,Starting
+Right-Back,Silvan Sidler,25,€400k,FC Winterthur,18. Matchday,Home,Starting
+Defensive Midfield,Basil Stillhart,29,€500k,FC Winterthur,18. Matchday,Home,Starting
+Defensive Midfield,Luca Zuffi,33,€100k,FC Winterthur,18. Matchday,Home,Starting
+Right Midfield,Samuel Ballet,22,€1.00m,FC Winterthur,18. Matchday,Home,Starting
+Left Midfield,Sayfallah Ltaief,23,€700k,FC Winterthur,18. Matchday,Home,Starting
+Attacking Midfield,Randy Schneider,22,€600k,FC Winterthur,18. Matchday,Home,Starting
+Centre-Forward,Aldin Turkes,27,€400k,FC Winterthur,18. Matchday,Home,Starting
+Goalkeeper,Markus Kuster,29,€400k,FC Winterthur,18. Matchday,Home,Substitute
+Centre-Back,Granit Lekaj,33,€100k,FC Winterthur,18. Matchday,Home,Substitute
+Left-Back,Souleymane Diaby,24,€900k,FC Winterthur,18. Matchday,Home,Substitute
+Right-Back,Adrian Gantenbein,22,€600k,FC Winterthur,18. Matchday,Home,Substitute
+Defensive Midfield,Thibault Corbaz,29,€100k,FC Winterthur,18. Matchday,Home,Substitute
+Left Midfield,Samir Ramizi,32,€300k,FC Winterthur,18. Matchday,Home,Substitute
+Attacking Midfield,Matteo Di Giusto,23,€1.50m,FC Winterthur,18. Matchday,Home,Substitute
+Left Winger,Nishan Burkart,23,€600k,FC Winterthur,18. Matchday,Home,Substitute
+Centre-Forward,Roman Buess,31,€200k,FC Winterthur,18. Matchday,Home,Substitute
+Goalkeeper,Karlo Letica,26,€700k,FC Lausanne-Sport,18. Matchday,Away,Starting
+Centre-Back,Berkay Dabanli,33,€200k,FC Lausanne-Sport,18. Matchday,Away,Starting
+Centre-Back,Noë Dussenne,31,€800k,FC Lausanne-Sport,18. Matchday,Away,Starting
+Left-Back,Morgan Poaty,26,€300k,FC Lausanne-Sport,18. Matchday,Away,Starting
+Right-Back,Raoul Giger,26,€500k,FC Lausanne-Sport,18. Matchday,Away,Starting
+Defensive Midfield,Jamie Roche,22,€800k,FC Lausanne-Sport,18. Matchday,Away,Starting
+Defensive Midfield,Antoine Bernede,24,€1.70m,FC Lausanne-Sport,18. Matchday,Away,Starting
+Right Midfield,Fousseni Diabaté,28,€3.60m,FC Lausanne-Sport,18. Matchday,Away,Starting
+Left Midfield,Samuel Kalu,26,€2.50m,FC Lausanne-Sport,18. Matchday,Away,Starting
+Attacking Midfield,Olivier Custodio,28,€400k,FC Lausanne-Sport,18. Matchday,Away,Starting
+Centre-Forward,Kaly Sène,22,€1.00m,FC Lausanne-Sport,18. Matchday,Away,Starting
+Goalkeeper,Thomas Castella,30,€200k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Centre-Back,Anel Husic,22,€800k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Centre-Back,Mickaël Nanizayamo,25,€200k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Central Midfield,Stjepan Kukuruzovic,34,€100k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Left Midfield,Toichi Suzuki,23,€700k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Left Midfield,Dominik Schwizer,27,€300k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Left Winger,Rares Ilie,20,€3.20m,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Left Winger,Trae Coyle,22,€400k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Centre-Forward,Brighton Labeau,27,€700k,FC Lausanne-Sport,18. Matchday,Away,Substitute
+Goalkeeper,Karlo Letica,26,€700k,FC Lausanne-Sport,19. Matchday,Home,Starting
+Centre-Back,Gábor Szalai,23,€650k,FC Lausanne-Sport,19. Matchday,Home,Starting
+Centre-Back,Noë Dussenne,31,€600k,FC Lausanne-Sport,19. Matchday,Home,Starting
+Left-Back,Morgan Poaty,26,€500k,FC Lausanne-Sport,19. Matchday,Home,Starting
+Right-Back,Raoul Giger,26,€500k,FC Lausanne-Sport,19. Matchday,Home,Starting
+Central Midfield,Olivier Custodio,28,€400k,FC Lausanne-Sport,19. Matchday,Home,Starting
+Central Midfield,Antoine Bernede,24,€2.00m,FC Lausanne-Sport,19. Matchday,Home,Starting
+Right Midfield,Samuel Kalu,26,€2.50m,FC Lausanne-Sport,19. Matchday,Home,Starting
+Left Midfield,Rares Ilie,20,€2.80m,FC Lausanne-Sport,19. Matchday,Home,Starting
+Centre-Forward,Kaly Sène,22,€2.00m,FC Lausanne-Sport,19. Matchday,Home,Starting
+Centre-Forward,Brighton Labeau,28,€700k,FC Lausanne-Sport,19. Matchday,Home,Starting
+Goalkeeper,Thomas Castella,30,€200k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Centre-Back,Berkay Dabanli,33,€200k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Centre-Back,Mickaël Nanizayamo,25,€200k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Centre-Back,Simone Grippo,35,€100k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Defensive Midfield,Jamie Roche,22,€1.20m,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Central Midfield,Stjepan Kukuruzovic,34,€100k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Left Midfield,Dominik Schwizer,27,€300k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Left Winger,Trae Coyle,23,€400k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Centre-Forward,Seydou Traoré,19,€100k,FC Lausanne-Sport,19. Matchday,Home,Substitute
+Goalkeeper,Lukas Watkowiak,27,€200k,FC St. Gallen 1879,19. Matchday,Away,Starting
+Centre-Back,Jozo Stanic,24,€700k,FC St. Gallen 1879,19. Matchday,Away,Starting
+Centre-Back,Albert Vallci,28,€1.00m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Left-Back,Chima Okoroji,26,€1.00m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Right-Back,Mattia Zanotti,21,€2.00m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Defensive Midfield,Jordi Quintillà,30,€1.30m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Right Midfield,Lukas Görtler,29,€2.00m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Left Midfield,Christian Witzig,23,€1.50m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Attacking Midfield,Bastien Toma,24,€1.00m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Centre-Forward,Chadrac Akolo,28,€700k,FC St. Gallen 1879,19. Matchday,Away,Starting
+Centre-Forward,Willem Geubbels,22,€2.00m,FC St. Gallen 1879,19. Matchday,Away,Starting
+Goalkeeper,Bela Dumrath,20,€100k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Centre-Back,Abdoulaye Diaby,23,€700k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Left-Back,Isaac Schmidt,24,€1.40m,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Right-Back,Patrick Sutter,25,€300k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Central Midfield,Mihailo Stevanovic,22,€500k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Left Winger,Felix Mambimbi,23,€800k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Right Winger,Albin Krasniqi,20,€400k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Centre-Forward,Fabian Schubert,29,€500k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Centre-Forward,Nikolaj Möller,21,€600k,FC St. Gallen 1879,19. Matchday,Away,Substitute
+Goalkeeper,Serif Berbic,22,€100k,FC Lugano,19. Matchday,Home,Starting
+Centre-Back,Kreshnik Hajrizi,24,€1.00m,FC Lugano,19. Matchday,Home,Starting
+Centre-Back,Lukas Mai,23,€2.20m,FC Lugano,19. Matchday,Home,Starting
+Left-Back,Albian Hajdari,20,€2.00m,FC Lugano,19. Matchday,Home,Starting
+Right-Back,Jhon Espinoza,24,€800k,FC Lugano,19. Matchday,Home,Starting
+Defensive Midfield,Ousmane Doumbia,31,€800k,FC Lugano,19. Matchday,Home,Starting
+Right Midfield,Uran Bislimi,24,€1.50m,FC Lugano,19. Matchday,Home,Starting
+Left Midfield,Jonathan Sabbatini,35,€100k,FC Lugano,19. Matchday,Home,Starting
+Attacking Midfield,Yanis Cimignani,21,€2.30m,FC Lugano,19. Matchday,Home,Starting
+Attacking Midfield,Hicham Mahou,24,€700k,FC Lugano,19. Matchday,Home,Starting
+Centre-Forward,Shkelqim Vladi,23,€1.30m,FC Lugano,19. Matchday,Home,Starting
+Goalkeeper,Diego Mina,18,€100k,FC Lugano,19. Matchday,Home,Substitute
+Centre-Back,Ayman El Wafi,19,€300k,FC Lugano,19. Matchday,Home,Substitute
+Left-Back,Martim Marques,19,€1.50m,FC Lugano,19. Matchday,Home,Substitute
+Defensive Midfield,Adrian Durrer,22,€200k,FC Lugano,19. Matchday,Home,Substitute
+Central Midfield,Anto Grgic,27,€800k,FC Lugano,19. Matchday,Home,Substitute
+Central Midfield,Romeo Morandi,20,€75k,FC Lugano,19. Matchday,Home,Substitute
+Attacking Midfield,Mattia Bottani,32,€350k,FC Lugano,19. Matchday,Home,Substitute
+Centre-Forward,Zan Celar,24,€4.00m,FC Lugano,19. Matchday,Home,Substitute
+Goalkeeper,Dany Da Silva,30,€300k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Centre-Back,Dylan Ouedraogo,25,€300k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Centre-Back,Lucas Pos,25,€400k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Centre-Back,Lavdrim Hajrulahu,25,€400k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Left-Back,Mischa Eberhard,21,€300k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Right-Back,Mohamed Abdallah,24,€400k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Central Midfield,Edmond Akichi,33,€200k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Central Midfield,Valon Hamdiu,25,€300k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Right Midfield,Alban Ajdini,24,€1.20m,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Left Midfield,Ismaël Gharbi,19,€5.00m,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Centre-Forward,Gabriel Kyeremateng,24,€350k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Starting
+Goalkeeper,Jérémy Vachoux,29,€500k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Centre-Back,Sahmkou Camara,20,€500k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Defensive Midfield,Giovani Bamba,24,€400k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Defensive Midfield,Romain Bayard,30,€200k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Attacking Midfield,Mergim Qarri,28,€300k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Attacking Midfield,Liridon Mulaj,25,€300k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Centre-Forward,Nathan Garcia,24,€300k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Centre-Forward,Vitalie Damascan,24,€700k,FC Stade-Lausanne-Ouchy,19. Matchday,Away,Substitute
+Goalkeeper,Marvin Keller,21,€1.20m,FC Winterthur,19. Matchday,Home,Starting
+Centre-Back,Remo Arnold,27,€200k,FC Winterthur,19. Matchday,Home,Starting
+Centre-Back,Granit Lekaj,33,€100k,FC Winterthur,19. Matchday,Home,Starting
+Left-Back,Tobias Schättin,26,€300k,FC Winterthur,19. Matchday,Home,Starting
+Right-Back,Adrian Gantenbein,22,€600k,FC Winterthur,19. Matchday,Home,Starting
+Defensive Midfield,Luca Zuffi,33,€100k,FC Winterthur,19. Matchday,Home,Starting
+Defensive Midfield,Alexandre Jankewitz,22,€800k,FC Winterthur,19. Matchday,Home,Starting
+Right Midfield,Nishan Burkart,23,€600k,FC Winterthur,19. Matchday,Home,Starting
+Left Midfield,Boubacar Fofana,25,€800k,FC Winterthur,19. Matchday,Home,Starting
+Attacking Midfield,Matteo Di Giusto,23,€1.50m,FC Winterthur,19. Matchday,Home,Starting
+Centre-Forward,Aldin Turkes,27,€400k,FC Winterthur,19. Matchday,Home,Starting
+Goalkeeper,Markus Kuster,29,€400k,FC Winterthur,19. Matchday,Home,Substitute
+Centre-Back,Basil Stillhart,29,€500k,FC Winterthur,19. Matchday,Home,Substitute
+Centre-Back,Loïc Lüthi,20,€100k,FC Winterthur,19. Matchday,Home,Substitute
+Left-Back,Souleymane Diaby,24,€500k,FC Winterthur,19. Matchday,Home,Substitute
+Right-Back,Silvan Sidler,25,€400k,FC Winterthur,19. Matchday,Home,Substitute
+Defensive Midfield,Thibault Corbaz,30,€100k,FC Winterthur,19. Matchday,Home,Substitute
+Left Midfield,Samir Ramizi,32,€300k,FC Winterthur,19. Matchday,Home,Substitute
+Attacking Midfield,Randy Schneider,22,€600k,FC Winterthur,19. Matchday,Home,Substitute
+Centre-Forward,Neftali Manzambi,26,€200k,FC Winterthur,19. Matchday,Home,Substitute
+Goalkeeper,Joël Mall,32,€500k,Servette FC,19. Matchday,Away,Starting
+Centre-Back,Yoan Severin,26,€1.10m,Servette FC,19. Matchday,Away,Starting
+Centre-Back,Steve Rouiller,33,€200k,Servette FC,19. Matchday,Away,Starting
+Left-Back,Bradley Mazikou,27,€1.00m,Servette FC,19. Matchday,Away,Starting
+Right-Back,Keigo Tsunemoto,25,€1.30m,Servette FC,19. Matchday,Away,Starting
+Central Midfield,Théo Magnin,20,€300k,Servette FC,19. Matchday,Away,Starting
+Central Midfield,Timothé Cognat,25,€2.80m,Servette FC,19. Matchday,Away,Starting
+Right Midfield,Dereck Kutesa,26,€1.70m,Servette FC,19. Matchday,Away,Starting
+Left Midfield,Miroslav Stevanovic,33,€1.00m,Servette FC,19. Matchday,Away,Starting
+Second Striker,Alexis Antunes,23,€1.30m,Servette FC,19. Matchday,Away,Starting
+Centre-Forward,Jérémy Guillemenot,26,€1.00m,Servette FC,19. Matchday,Away,Starting
+Goalkeeper,Jérémy Frick,30,€500k,Servette FC,19. Matchday,Away,Substitute
+Central Midfield,Samba Diba,20,€500k,Servette FC,19. Matchday,Away,Substitute
+Right Midfield,Bendegúz Bolla,24,€1.80m,Servette FC,19. Matchday,Away,Substitute
+Left Winger,Hussayn Touati,22,€400k,Servette FC,19. Matchday,Away,Substitute
+Left Winger,Tiemoko Ouattara,18,€300k,Servette FC,19. Matchday,Away,Substitute
+Right Winger,Alexander Lyng,19,€500k,Servette FC,19. Matchday,Away,Substitute
+Centre-Forward,Enzo Crivelli,28,€900k,Servette FC,19. Matchday,Away,Substitute
