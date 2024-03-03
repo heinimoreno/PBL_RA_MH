@@ -28,6 +28,7 @@ Jump straight to getting the project running. People love instant gratification,
 git clone https://yourprojectlink.git
 cd yourprojectname
 pip install -r requirements.txt
+```
 
 ## Detailed Setup
 
