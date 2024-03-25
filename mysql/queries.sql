@@ -1,5 +1,8 @@
 USE transfermarkt;
 
+
+
+-- queries or matches_info_sl_cleaned	
 -- SQL statement to create the table for Home Teams
 CREATE TABLE home_teams (
     MatchID INT,
@@ -63,3 +66,53 @@ SET team_id = (SELECT c.team_id
 
 
 
+
+
+
+-- queries or league_standings
+-- Rename 'FC Basel' to 'FC Basel 1893'
+UPDATE league_standings
+SET Club = 'FC Basel 1893'
+WHERE Club = 'FC Basel';
+
+-- Rename 'FC St. Gallen' to 'FC St. Gallen 1879'
+UPDATE league_standings
+SET Club = 'FC St. Gallen 1879'
+WHERE Club = 'FC St. Gallen';
+
+-- Rename 'Grasshoppers' to 'Grasshopper Club Zurich'
+UPDATE league_standings
+SET Club = 'Grasshopper Club Zurich'
+WHERE Club = 'Grasshoppers';
+
+
+
+CREATE TABLE league_standings_2022_2023 (
+    Place INT,
+    Club VARCHAR(255),
+    Played INT,
+    Wins INT,
+    Draws INT,
+    Losses INT,
+    Goals_Scored INT,
+    Goals_Conceded INT,
+    Goal_Difference INT,
+    Points INT,
+    Title_1 VARCHAR(255),
+    Title_2 VARCHAR(255),
+    Season YEAR
+);
+
+
+INSERT INTO league_standings_2022_2023 (Place, Club, Played, Wins, Draws, Losses, Goals_Scored, Goals_Conceded, Goal_Difference, Points, Title_1, Title_2, Season)
+SELECT Place, Club, Played, Wins, Draws, Losses, Goals_Scored, Goals_Conceded, Goal_Difference, Points, Title_1, Title_2, Season
+FROM league_standings
+WHERE Season = 2022;
+
+
+ALTER TABLE league_standings_2022_2023 ADD COLUMN team_id INT;
+
+UPDATE league_standings_2022_2023 
+SET team_id = (SELECT c.team_id 
+               FROM teams c 
+               WHERE c.team_name = league_standings_2022_2023.Club);

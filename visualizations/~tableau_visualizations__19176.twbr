@@ -1,0 +1,1011 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1108.0821                               -->
+<workbook original-version='18.1' source-build='2022.3.1 (20223.22.1108.0821)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='transfermarktv2 (transfermarkt)' inline='true' name='federated.1s2vhdk02poau012mojt6017pn2i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1' name='mysql.00x2n211asmq5a1f6674a0auxpds'>
+            <connection class='mysql' dbname='transfermarkt' odbc-native-protocol='' one-time-sql='' port='3306' server='127.0.0.1' source-charset='' username='pbl_ra_mh' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.00x2n211asmq5a1f6674a0auxpds' name='lineups_2022_2023_sl_cleaned' table='[lineups_2022_2023_sl_cleaned]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='mysql.00x2n211asmq5a1f6674a0auxpds' name='matches_info_sl_cleaned' table='[matches_info_sl_cleaned]' type='table' />
+          <relation connection='mysql.00x2n211asmq5a1f6674a0auxpds' name='lineups_2022_2023_sl_cleaned' table='[lineups_2022_2023_sl_cleaned]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Age]' value='[lineups_2022_2023_sl_cleaned].[Age]' />
+          <map key='[AwayTeamPoints]' value='[matches_info_sl_cleaned].[AwayTeamPoints]' />
+          <map key='[AwayTeam]' value='[matches_info_sl_cleaned].[AwayTeam]' />
+          <map key='[Club]' value='[lineups_2022_2023_sl_cleaned].[Club]' />
+          <map key='[Date]' value='[lineups_2022_2023_sl_cleaned].[Date]' />
+          <map key='[Gameday]' value='[lineups_2022_2023_sl_cleaned].[Gameday]' />
+          <map key='[GoalsAwayTeam]' value='[matches_info_sl_cleaned].[GoalsAwayTeam]' />
+          <map key='[GoalsHomeTeam]' value='[matches_info_sl_cleaned].[GoalsHomeTeam]' />
+          <map key='[HomeAway]' value='[lineups_2022_2023_sl_cleaned].[HomeAway]' />
+          <map key='[HomeTeamPoints]' value='[matches_info_sl_cleaned].[HomeTeamPoints]' />
+          <map key='[HomeTeam]' value='[matches_info_sl_cleaned].[HomeTeam]' />
+          <map key='[League]' value='[matches_info_sl_cleaned].[League]' />
+          <map key='[MarketValue]' value='[lineups_2022_2023_sl_cleaned].[MarketValue]' />
+          <map key='[MatchID (lineups_2022_2023_sl_cleaned)]' value='[lineups_2022_2023_sl_cleaned].[MatchID]' />
+          <map key='[MatchID]' value='[matches_info_sl_cleaned].[MatchID]' />
+          <map key='[Matchday]' value='[lineups_2022_2023_sl_cleaned].[Matchday]' />
+          <map key='[Player]' value='[lineups_2022_2023_sl_cleaned].[Player]' />
+          <map key='[Position]' value='[lineups_2022_2023_sl_cleaned].[Position]' />
+          <map key='[ResultEnd]' value='[matches_info_sl_cleaned].[ResultEnd]' />
+          <map key='[ResultHT]' value='[matches_info_sl_cleaned].[ResultHT]' />
+          <map key='[Result]' value='[matches_info_sl_cleaned].[Result]' />
+          <map key='[Status]' value='[lineups_2022_2023_sl_cleaned].[Status]' />
+          <map key='[Time]' value='[lineups_2022_2023_sl_cleaned].[Time]' />
+          <map key='[Weekday]' value='[lineups_2022_2023_sl_cleaned].[Weekday]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>MatchID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[MatchID]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>MatchID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HomeTeam</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[HomeTeam]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>HomeTeam</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HomeTeamPoints</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[HomeTeamPoints]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>HomeTeamPoints</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AwayTeamPoints</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[AwayTeamPoints]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>AwayTeamPoints</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AwayTeam</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AwayTeam]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>AwayTeam</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Result]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>Result</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>League</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[League]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>League</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ResultEnd</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ResultEnd]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>ResultEnd</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ResultHT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ResultHT]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>ResultHT</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GoalsHomeTeam</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[GoalsHomeTeam]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>GoalsHomeTeam</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GoalsAwayTeam</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[GoalsAwayTeam]</local-name>
+            <parent-name>[matches_info_sl_cleaned]</parent-name>
+            <remote-alias>GoalsAwayTeam</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Position</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Position]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Position</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Player</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MarketValue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MarketValue]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>MarketValue</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Club</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Club]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Club</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gameday</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gameday]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Gameday</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HomeAway</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[HomeAway]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>HomeAway</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MatchID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[MatchID (lineups_2022_2023_sl_cleaned)]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>MatchID</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Matchday</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Matchday]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Matchday</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekday</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Weekday]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Weekday</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[lineups_2022_2023_sl_cleaned]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <precision>8</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Away Team Points' datatype='integer' name='[AwayTeamPoints]' role='measure' type='quantitative' />
+      <column caption='Away Team' datatype='string' name='[AwayTeam]' role='dimension' type='nominal' />
+      <column caption='Club1' datatype='string' name='[Club]' role='dimension' type='nominal' />
+      <column caption='Goals Away Team' datatype='integer' name='[GoalsAwayTeam]' role='measure' type='quantitative' />
+      <column caption='Goals Home Team' datatype='integer' name='[GoalsHomeTeam]' role='measure' type='quantitative' />
+      <column caption='Goals Conceded' datatype='integer' name='[Goals_Conceded]' role='measure' type='quantitative' />
+      <column caption='Goals Scored' datatype='integer' name='[Goals_Scored]' role='measure' type='quantitative' />
+      <column caption='Home Away' datatype='string' name='[HomeAway]' role='dimension' type='nominal' />
+      <column caption='Home Team Points' datatype='integer' name='[HomeTeamPoints]' role='measure' type='quantitative' />
+      <column caption='Home Team' datatype='string' name='[HomeTeam]' role='dimension' type='nominal' />
+      <column caption='Market Value' datatype='string' name='[MarketValue]' role='dimension' type='nominal' />
+      <column caption='MatchID (lineups 2022 2023 sl cleaned)' datatype='integer' name='[MatchID (lineups_2022_2023_sl_cleaned)]' role='dimension' type='ordinal' />
+      <column caption='Match ID' datatype='integer' name='[MatchID]' role='dimension' type='ordinal' />
+      <column caption='Result End' datatype='string' name='[ResultEnd]' role='dimension' type='nominal' />
+      <column caption='Result HT' datatype='string' name='[ResultHT]' role='dimension' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[Time]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='lineups_2022_2023_sl_cleaned' datatype='table' name='[__tableau_internal_object_id__].[lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='matches_info_sl_cleaned' datatype='table' name='[__tableau_internal_object_id__].[matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Switzerland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='lineups_2022_2023_sl_cleaned' id='lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7'>
+            <properties context=''>
+              <relation connection='mysql.00x2n211asmq5a1f6674a0auxpds' name='lineups_2022_2023_sl_cleaned' table='[lineups_2022_2023_sl_cleaned]' type='table' />
+            </properties>
+          </object>
+          <object caption='matches_info_sl_cleaned' id='matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4'>
+            <properties context=''>
+              <relation connection='mysql.00x2n211asmq5a1f6674a0auxpds' name='matches_info_sl_cleaned' table='[matches_info_sl_cleaned]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[MatchID]' />
+              <expression op='[MatchID (lineups_2022_2023_sl_cleaned)]' />
+            </expression>
+            <first-end-point object-id='matches_info_sl_cleaned_2FF9DA20600F429F8885345DD2347FD4' />
+            <second-end-point object-id='lineups_2022_2023_sl_cleaned_1D7620AD52AE4B01A906FDF797FC8AF7' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Points League Winner</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transfermarktv2 (transfermarkt)' name='federated.1s2vhdk02poau012mojt6017pn2i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s2vhdk02poau012mojt6017pn2i'>
+            <column datatype='integer' name='[Points]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Rank]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Season]' role='measure' type='quantitative' />
+            <column-instance column='[Rank]' derivation='Attribute' name='[attr:Rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='Attribute' name='[attr:Season:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points]' derivation='None' name='[none:Points:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points]' derivation='Sum' name='[sum:Points:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Rank:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>1</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Season:qk]' included-values='in-range'>
+            <min>2014</min>
+            <max>2022</max>
+          </filter>
+          <slices>
+            <column>[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Rank:qk]</column>
+            <column>[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Season:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Season:qk]' value='' />
+            <format attr='text-format' field='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Season:qk]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1s2vhdk02poau012mojt6017pn2i].[:Measure Names]' />
+              <text column='[federated.1s2vhdk02poau012mojt6017pn2i].[sum:Points:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1s2vhdk02poau012mojt6017pn2i].[none:Points:qk]</rows>
+        <cols>[federated.1s2vhdk02poau012mojt6017pn2i].[none:Season:qk]</cols>
+      </table>
+      <simple-id uuid='{B7A37C5B-3734-4277-9D2F-A6905D36E54F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Market Value 2023</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transfermarktv2 (transfermarkt)' name='federated.1s2vhdk02poau012mojt6017pn2i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s2vhdk02poau012mojt6017pn2i'>
+            <column datatype='date' name='[As of]' role='dimension' type='ordinal' />
+            <column caption='Club1' datatype='string' name='[Club]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[As of]' derivation='Month' name='[mn:As of:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Club]' derivation='None' name='[none:Club:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Club:nk]' />
+              <path column='[federated.1s2vhdk02poau012mojt6017pn2i].[mn:As of:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1s2vhdk02poau012mojt6017pn2i].[sum:Value:qk]</rows>
+        <cols>[federated.1s2vhdk02poau012mojt6017pn2i].[mn:As of:ok]</cols>
+      </table>
+      <simple-id uuid='{ECA1C6F5-1D13-4A8F-9908-42D0911CB656}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Goals Scored and Conceded</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transfermarktv2 (transfermarkt)' name='federated.1s2vhdk02poau012mojt6017pn2i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s2vhdk02poau012mojt6017pn2i'>
+            <column caption='Goals Conceded' datatype='integer' name='[Goals_Conceded]' role='measure' type='quantitative' />
+            <column caption='Goals Scored' datatype='integer' name='[Goals_Scored]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Rank]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Season]' role='measure' type='quantitative' />
+            <column-instance column='[Rank]' derivation='Attribute' name='[attr:Rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='Attribute' name='[attr:Season:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Goals_Conceded]' derivation='None' name='[none:Goals_Conceded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Goals_Scored]' derivation='None' name='[none:Goals_Scored:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1s2vhdk02poau012mojt6017pn2i].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='quantitative' column='[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Rank:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>1</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Season:qk]' included-values='in-range'>
+            <min>2014</min>
+            <max>2022</max>
+          </filter>
+          <slices>
+            <column>[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Rank:qk]</column>
+            <column>[federated.1s2vhdk02poau012mojt6017pn2i].[attr:Season:qk]</column>
+            <column>[federated.1s2vhdk02poau012mojt6017pn2i].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Goals_Conceded:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Goals_Scored:qk]' scope='rows' value='Goals Scored &amp; Conceded' />
+            <format attr='display' class='0' field='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Goals_Conceded:qk]' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Goals_Scored:qk]'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#00007f' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#00007f67' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Goals_Conceded:qk]'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ac0000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ac000067' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1s2vhdk02poau012mojt6017pn2i].[none:Goals_Scored:qk] + [federated.1s2vhdk02poau012mojt6017pn2i].[none:Goals_Conceded:qk])</rows>
+        <cols>[federated.1s2vhdk02poau012mojt6017pn2i].[none:Season:qk]</cols>
+      </table>
+      <simple-id uuid='{AC48124C-8290-4B03-8435-5A90E59DAB7B}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transfermarktv2 (transfermarkt)' name='federated.1s2vhdk02poau012mojt6017pn2i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s2vhdk02poau012mojt6017pn2i'>
+            <column caption='Club1' datatype='string' name='[Club]' role='dimension' type='nominal' />
+            <column-instance column='[Club]' derivation='None' name='[none:Club:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1s2vhdk02poau012mojt6017pn2i].[none:Club:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{46893854-F8DE-444C-9A53-BFE0E46CD5DE}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='48899' id='7' param='horz' type-v2='layout-flow' w='49100' x='800' y='1000'>
+            <zone h='48899' id='5' type-v2='layout-basic' w='49100' x='800' y='1000'>
+              <zone h='48899' id='9' name='Sheet 1' w='49100' x='800' y='1000'>
+                <layout-cache minheight='226' minwidth='159' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='48899' id='3' name='Sheet 2' w='33332' x='49900' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='48899' id='11' type-v2='layout-flow' w='15968' x='83232' y='1000'>
+            <zone h='2750' id='8' name='Sheet 2' pane-specification-id='2' param='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Club:nk]' type-v2='color' w='15968' x='83232' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='49101' id='12' name='Sheet 3' w='98400' x='800' y='49899'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='13' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='48899' id='9' is-fixed='true' name='Sheet 1' w='49100' x='800' y='1000'>
+                  <layout-cache minheight='226' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48899' id='3' is-fixed='true' name='Sheet 2' w='33332' x='49900' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='33250' id='8' name='Sheet 2' pane-specification-id='2' param='[federated.1s2vhdk02poau012mojt6017pn2i].[none:Club:nk]' type-v2='color' w='15968' x='83232' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49101' id='12' is-fixed='true' name='Sheet 3' w='98400' x='800' y='49899'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CFB487FC-41A4-4B90-9277-14A90116DC79}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1s2vhdk02poau012mojt6017pn2i].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B3AAAB8-B17A-4121-A9B3-716289702478}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1D232B83-A73A-4A47-AEBB-DD48480DA519}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE172255-6F4F-4657-BC09-56EF655F4711}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{02ABD7D2-385F-4A5D-BB40-1AC13CC56C45}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{09C6AC6E-B31F-4B89-A8DC-57652729793E}' />
+    </window>
+  </windows>
+</workbook>
